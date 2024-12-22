@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Source+Code+Pro:wght@700&display=swap" rel="stylesheet">
+
+    <title>CodeBox</title>
+    <link rel="stylesheet" href="../style.css"> <!-- Подключение CSS файла -->
+</head>
+<body>
+    <div class="full-page-tab2">
+        <div class="header">
+            <!--портировать лого желательно-->
+            <div class="header-z">
+                <div class="header-main">
+                    <button class="button" data-link="../index.html">CodeBox</button>
+                    <div class="search-container">
+                        <input type="text" class="search-input" placeholder="Введите запрос..." id="courseName">
+                        <img src="../lupa.png" alt="Поиск" class="search-icon" id="searchIcon" onclick="searchCourse()">
+                    </div>
+                    <button class="button-main" data-link="../catalog.html">курсы</button>
+                    <button class="button-main" data-link="../profile.html">личный кабинет</button>
+                    <img src="../icons81.png" alt="Menu Icon" class="index-btn-menu-icon" id="toggle-panel">
+                    <!--<button class="button-main" data-link="registration.html">личный кабинет</button> -->
+                </div>
+            </div>
+            <div class="side-panel" id="side-panel">
+                <div class="side-panel-cont">
+                    <div class="side-search-container">
+                        <input type="text" class="side-search-input" placeholder="Введите запрос..." id="courseName">
+                        <img src="../lupa.png" alt="Поиск" class="side-search-icon" id="searchIcon" onclick="searchCourse()">
+                    </div>
+                    <button class="side-button-main" data-link="catalog.html">курсы</button>
+                    <button class="side-button-main" data-link="profile.html">личный кабинет</button>
+                </div>
+            </div>
+        </div>
+        <div class="srovnat">
+            <div class="courses-sidetext">
+                <button class="courses-button" data-link="pyt1.html">Python</button>
+                <div class="courses-text2">навигация</div>
+                <div class="outlined-buttons-container">
+                    <button class="outlined-button" data-link="pyt2.html">Переменные</button>
+                    <button class="outlined-button" data-link="pyt3.html">Условные операторы</button>
+                    <button class="outlined-button" data-link="pyt4.html">Циклы</button>
+                    <button class="outlined-button" data-link="pyt5.html">Массивы</button>
+                    <button class="outlined-button" data-link="pyt6.html">Функции</button>
+                    <button class="outlined-button" data-link="pyt7.html">Библиотеки</button>
+                    <button class="outlined-button" data-link="pyt8.html">Фреймворки</button>
+                </div>
+            </div>
+
+
+            <div class="courses-mega-super-ultra-hyper-absolute-full-courses-main-text">
+                <div class="courses-main-text">
+                    <div class="courses-title-text">- массивы</div>
+                    <div class="courses-subtitle-text">
+                        Массивы — это структуры данных, которые позволяют хранить несколько значений в одной переменной. 
+                        Они особенно полезны, когда нужно работать с большим количеством данных одного типа. 
+                        В Python массивы могут быть использованы для хранения чисел, строк и других объектов. 
+                        Основное преимущество массивов заключается в том, что они позволяют легко управлять и манипулировать данными.
+                    </div>
+                </div>
+
+
+                <div class="courses-main-text2">
+                    <div class="courses-title-text">Типы массивов</div>
+                    <div class="courses-subtitle-text">
+                        <ul>
+                            <li>список</li>
+                            <li>кортеж</li>
+                            <li>словарь</li>
+                            <li>матрица</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="half-section">
+                <h1 class="black-section-title">Видеоуроки которые помогут тебе</h1>
+                <div class="video-container">
+                    <iframe src="https://youtu.be/DZvNZ9l9NT4?list=PLDyJYA6aTY1lPWXBPk0gw6gR8fEtPDGKa" class="video" allowfullscreen></iframe>
+                    <iframe src="https://youtu.be/DZvNZ9l9NT4?list=PLDyJYA6aTY1lPWXBPk0gw6gR8fEtPDGKa" class="video" allowfullscreen></iframe>
+                    <iframe src="https://youtu.be/DZvNZ9l9NT4?list=PLDyJYA6aTY1lPWXBPk0gw6gR8fEtPDGKa" class="video" allowfullscreen></iframe>
+                    <iframe src="https://youtu.be/DZvNZ9l9NT4?list=PLDyJYA6aTY1lPWXBPk0gw6gR8fEtPDGKa" class="video" allowfullscreen></iframe>
+                </div>
+            </div>
+        
+
+
+
+
+        <!--<button class="video-button" id="openPanelButton">Видеоуроки</button> -->
+        
+    </div>
+    <script src="../script.js"></script>
+</body>
+</html>

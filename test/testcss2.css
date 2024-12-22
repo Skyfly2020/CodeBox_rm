@@ -1,0 +1,78 @@
+/* Общие стили для профиля */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f6f6f6; /* Фон страницы */
+}
+
+.profile {
+    width: 60%; /* Центрируем содержимое */
+    height: 100vh;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff; /* Белый фон для профиля */
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Тень */
+}
+
+/* Контейнер с аватаркой и никнеймом */
+.profile-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #7F57F1;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.nickname {
+    font-size: 24px;
+    font-weight: bold;
+    color: #232323;
+}
+
+/* Контейнер с личными данными */
+.profile-big-details {
+    display: flex;          /* Включаем Flexbox */
+    justify-content: center; /* Выравнивание вдоль основной оси (горизонтально) */
+    align-items: center;     /* Выравнивание вдоль поперечной оси (вертикально) */
+    gap: 2vw;
+}
+.profile-details {
+    margin-top: 2vh;
+    width: 40%;
+    height: 60vh;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+.profile-details2 {
+    margin-top: 2vh;
+    width: 40%;
+    height: 60vh;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: flex;          /* Включаем Flexbox */
+    justify-content: top; /* Выравнивание вдоль основной оси (вертикально) */
+    align-items: center;     /* Выравнивание вдоль поперечной оси (горизонтально) */
+    flex-direction: column;
+}
+.profile-details p {
+    font-size: 16px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.profile-details strong {
+    color: #7F57F1;
+}

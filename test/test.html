@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поиск курса</title>
+    <script>
+        function searchCourse() {
+            const input = document.getElementById('courseName').value.trim();
+            if (input) {
+                // Переход на страницу поиска с передачей параметра courseName
+                window.location.href = `search-container.html?courseName=${encodeURIComponent(input)}`;
+            } else {
+                alert('Введите название курса!');
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Найти курс программирования</h1>
+    <input type="text" id="courseName" placeholder="Введите название курса">
+    <button onclick="searchCourse()">Поиск</button>
+</body>
+</html>

@@ -1,0 +1,40 @@
+body {
+    min-height: 2000px; /* Высота страницы */
+    margin: 0; /* Убирает отступы по умолчанию */
+    font-family: 'Roboto', sans-serif; /* Установите желаемый шрифт */
+    overflow-y: visible; /* Включает вертикальную прокрутку при необходимости */
+    background-color: #f6f6f6; /* Фон для всей страницы */
+}
+/* Контейнер для кнопок */
+.buttons-container {
+    margin-left: 100px; /* Отступ влево на 100px */
+    display: flex; /* Гибкий контейнер */
+    flex-direction: column; /* Кнопки расположены в столбец */
+    gap: 10px; /* Расстояние между кнопками */
+}
+.outlined-button {
+    width: 175px;
+    height: 60px;
+    border: 2px solid #808080; /* Серая обводка */
+    background-color: transparent; /* Без цвета внутри */
+    border-radius: 8px; /* Закругленные углы */
+    font-family: 'Arial', sans-serif; /* Шрифт для текста */
+    font-size: 18px; /* Размер текста */
+    font-weight: bold; /* Жирный текст */
+    color: #000000; /* Цвет текста совпадает с обводкой */
+    text-align: center; /* Центрирование текста */
+    cursor: pointer; /* Указатель при наведении */
+    transition: all 0.3s ease; /* Плавный эффект при взаимодействии */
+}
+
+/* Эффект при наведении */
+.outlined-button:hover {
+    color: #ffffff; /* Текст становится белым */
+    background-color: #232323; /* Серая заливка */
+}
+
+/* Эффект при нажатии */
+.outlined-button:active {
+    background-color: #232323; /* Тёмно-серая заливка */
+    border-color: #505050; /* Тёмно-серая обводка */
+}

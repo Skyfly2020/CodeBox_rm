@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Source+Code+Pro:wght@700&display=swap" rel="stylesheet">
+
+    <title>CodeBox</title>
+    <link rel="stylesheet" href="../style.css"> <!-- Подключение CSS файла -->
+</head>
+<body>
+    <div class="courses-body">
+        <div class="header">
+            <!--портировать лого желательно-->
+            <div class="header-z">
+                <div class="header-main">
+                    <button class="button" data-link="../index.html">CodeBox</button>
+                    <div class="search-container">
+                        <input type="text" class="search-input" placeholder="Введите запрос..." id="courseName">
+                        <img src="../lupa.png" alt="Поиск" class="search-icon" id="searchIcon" onclick="searchCourse()">
+                    </div>
+                    <button class="button-main" data-link="../catalog.html">курсы</button>
+                    <button class="button-main" data-link="../profile.html">личный кабинет</button>
+                    <img src="../icons81.png" alt="Menu Icon" class="index-btn-menu-icon" id="toggle-panel">
+                    <!--<button class="button-main" data-link="registration.html">личный кабинет</button> -->
+                </div>
+            </div>
+            <div class="side-panel" id="side-panel">
+                <div class="side-panel-cont">
+                    <div class="side-search-container">
+                        <input type="text" class="side-search-input" placeholder="Введите запрос..." id="courseName">
+                        <img src="../lupa.png" alt="Поиск" class="side-search-icon" id="searchIcon" onclick="searchCourse()">
+                    </div>
+                    <button class="side-button-main" data-link="catalog.html">курсы</button>
+                    <button class="side-button-main" data-link="profile.html">личный кабинет</button>
+                </div>
+            </div>
+        </div>
+        <div class="srovnat">
+            <div class="courses-sidetext">
+                <button class="courses-button" data-link="cpp1.html">C++</button>
+                <div class="courses-text2">навигация</div>
+                <div class="outlined-buttons-container">
+                    <button class="outlined-button" data-link="cpp2.html">Переменные</button>
+                    <button class="outlined-button" data-link="cpp3.html">Условные операторы</button>
+                    <button class="outlined-button" data-link="cpp4.html">Циклы</button>
+                    <button class="outlined-button" data-link="cpp5.html">Массивы</button>
+                    <button class="outlined-button" data-link="cpp6.html">Функции</button>
+                    <button class="outlined-button" data-link="cpp7.html">Указатели</button>
+                    <button class="outlined-button" data-link="cpp8.html">Фреймворки</button>
+                </div>
+            </div>
+
+            <div class="courses-mega-super-ultra-hyper-absolute-full-courses-main-text">
+                <div class="courses-main-text">
+                    <div class="courses-title-text">Что такое C++?</div>
+                    <div class="courses-subtitle-text">
+                        C++ — это язык программирования, который был разработан в 80-х годах прошлого века как расширение языка C. 
+                        Этот язык отличается от Си тем, что имеет больший набор возможностей, включая объектно-ориентированное программирование и шаблоны.
+                    </div>
+                </div>
+
+
+                <div class="courses-main-text2">
+                    <div class="courses-title-text">Где используется C++?</div>
+                    <div class="courses-subtitle-text">
+                        <ul>
+                            <li>Создание игр</li>
+                            <li>Создание ОС</li>
+                            <li>Обработка массивных данных</li>
+                            <li>Мобильные приложения</li>
+                            <li>Драйверы устройств</li>
+                            <li>Облако</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Source+Code+Pro:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Название_шрифта&display=swap" rel="stylesheet">
+    <title>CodeBox</title>
+    <link rel="stylesheet" href="style.css"> <!-- Подключение CSS файла -->
+</head>
+<body>
+        <div class="header">
+            <!--портировать лого желательно-->
+            <div class="header-z">
+                <div class="header-main">
+                    <button class="button" data-link="index.html">CodeBox</button>
+                    <div class="search-container">
+                        <input type="text" class="search-input" placeholder="Введите запрос..." id="courseName">
+                        <img src="lupa.png" alt="Поиск" class="search-icon" id="searchIcon" onclick="searchCourse()">
+                    </div>
+                    <button class="button-main" data-link="catalog.html">курсы</button>
+                    <button class="button-main" data-link="profile.html">личный кабинет</button>
+                    <img src="icons81.png" alt="Menu Icon" class="index-btn-menu-icon" id="toggle-panel">
+                    <!--<button class="button-main" data-link="registration.html">личный кабинет</button> -->
+                </div>
+            </div>
+            <div class="side-panel" id="side-panel">
+                <div class="side-panel-cont">
+                    <div class="side-search-container">
+                        <input type="text" class="side-search-input" placeholder="Введите запрос..." id="courseName">
+                        <img src="lupa.png" alt="Поиск" class="side-search-icon" id="searchIcon" onclick="searchCourse()">
+                    </div>
+                    <button class="side-button-main" data-link="catalog.html">курсы</button>
+                    <button class="side-button-main" data-link="profile.html">личный кабинет</button>
+                </div>
+            </div>
+        </div>
+        <div class="search-slide">
+            <div class="search-slide-text">
+                <div class="search-text">Результаты поиска</div>
+                <div class="slide-btns-container">
+                    <div id="results" class="button-btns-container"></div>
+                </div>
+            </div>
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
